@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>resources/images/search-icon-32x32.png</file>
+        <file>resources/images/restore-100x100.png</file>
+        <file>resources/images/open-book-512x512.png</file>
+    </qresource>
+</RCC>

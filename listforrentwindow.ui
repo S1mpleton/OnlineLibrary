@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ListForRentWindow</class>
+ <widget class="QDialog" name="ListForRentWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>768</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Список заказов</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QTableWidget" name="ordersTableWidget">
+        <property name="gridStyle">
+         <enum>Qt::PenStyle::DotLine</enum>
+        </property>
+        <property name="sortingEnabled">
+         <bool>false</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string>Об аренде(в днях)</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Телефон</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Название книги</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Залоговая стоимость</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Индификатор</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="toRentPushButton">
+       <property name="text">
+        <string>В аренду</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deletePushButton">
+       <property name="text">
+        <string>Завершить аренду</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="backPushButton">
+       <property name="text">
+        <string>Назад</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>backPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ListForRentWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>300</x>
+     <y>282</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>397</x>
+     <y>271</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

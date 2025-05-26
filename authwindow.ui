@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AuthWindow</class>
+ <widget class="QDialog" name="AuthWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>565</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Введите свои данные</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <property name="labelAlignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="horizontalSpacing">
+       <number>12</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>12</number>
+      </property>
+      <property name="rightMargin">
+       <number>11</number>
+      </property>
+      <property name="bottomMargin">
+       <number>11</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Фамилия:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Имя:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Отчество:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Адрес:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Телефон:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Пароль:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="surnameLineEdit"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="nameLineEdit"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="patlineEdit"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="adressLineEdit"/>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="phoneLineEdit"/>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="passwordLineEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="acceptPushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Зарегистрироваться</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="toLoginPushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>У меня есть аккаунт</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="toRegPushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>У меня нет аккаунта</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="closePushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Отмена</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>toLoginPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>311</x>
+     <y>347</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>30</x>
+     <y>62</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toLoginPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label_2</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>189</x>
+     <y>320</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>43</x>
+     <y>104</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toLoginPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label_3</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>309</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>30</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toLoginPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label_4</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>234</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>43</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toLoginPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>surnameLineEdit</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>224</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>64</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toLoginPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>nameLineEdit</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>317</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>117</x>
+     <y>93</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toLoginPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>patlineEdit</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>299</x>
+     <y>347</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>132</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toLoginPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>adressLineEdit</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>231</x>
+     <y>326</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>248</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toLoginPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>toLoginPushButton</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>322</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>226</x>
+     <y>318</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toRegPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>375</x>
+     <y>323</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>72</x>
+     <y>180</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toRegPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label_3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>321</x>
+     <y>317</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>87</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toRegPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label_2</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>352</x>
+     <y>323</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>69</x>
+     <y>101</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toRegPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>465</x>
+     <y>347</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>80</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toRegPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>surnameLineEdit</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>317</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toRegPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>nameLineEdit</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>378</x>
+     <y>322</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toRegPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>patlineEdit</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>318</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>448</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toRegPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>adressLineEdit</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>356</x>
+     <y>313</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>465</x>
+     <y>182</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toRegPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>toRegPushButton</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>465</x>
+     <y>347</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>465</x>
+     <y>347</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toRegPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>toLoginPushButton</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>338</x>
+     <y>314</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>247</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toLoginPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>toRegPushButton</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>173</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>465</x>
+     <y>347</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>closePushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AuthWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>526</x>
+     <y>320</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>561</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
