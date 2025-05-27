@@ -3,6 +3,7 @@
 #include "ui_authwindow.h"
 
 #include <QMessageBox>
+#include <QRegularExpressionValidator>
 
 AuthWindow::AuthWindow(QWidget *parent)
     : QDialog(parent)
@@ -16,6 +17,23 @@ AuthWindow::AuthWindow(QWidget *parent)
     ui->toRegPushButton->hide();
 
     setWindowTitle("Регистрация");
+
+    ui->phoneLineEdit->setInputMask("+7 (999) 999-99-99;_");
+
+    QRegularExpression regex("^[\\p{L} ]+$");
+    QRegularExpressionValidator *validator = new QRegularExpressionValidator(regex, this);
+
+    ui->surnameLineEdit->setMaxLength(25);
+    ui->surnameLineEdit->setValidator(validator);
+
+    ui->nameLineEdit->setMaxLength(25);
+    ui->nameLineEdit->setValidator(validator);
+
+    ui->patlineEdit->setMaxLength(25);
+    ui->patlineEdit->setValidator(validator);
+
+    ui->adressLineEdit->setMaxLength(100);
+    ui->passwordLineEdit->setMaxLength(60);
 
 }
 

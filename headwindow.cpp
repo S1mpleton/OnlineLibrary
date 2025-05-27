@@ -232,6 +232,10 @@ void HeadWindow::selectGanre(int index){
 
 void HeadWindow::on_clearPushButton_clicked()
 {
-    QMessageBox::information(this, "В разработке", "В разработке");
+    ui->lineSerchBook->clear();
+    ui->genresComboBox->setCurrentIndex(0);
+
+    on_lineSerchBook_textChanged(ui->lineSerchBook->text());
+    // QMessageBox::information(this, "В разработке", "В разработке");
 }
 
